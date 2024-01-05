@@ -17,4 +17,14 @@ const ru = [
   "воскресенье",
 ];
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+function createObject(en, ru) {
+  if (en.length != ru.length || en.length == 0 || ru.length == 0) {
+    return null;
+  }
+
+  let obj = {};
+  en.forEach((k, i) => { obj[k] = ru[i] })
+  return obj;
+}
+
+console.log(createObject(en, ru));
