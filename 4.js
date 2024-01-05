@@ -31,4 +31,11 @@ const products = [
   },
 ];
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+//1-е задание:
+let data = products.filter(
+  element => element.photos >= [0]);
+console.log(data);
+
+//2-е задание:
+products.sort((x, y) => x.price - y.price);
+console.log(products);
